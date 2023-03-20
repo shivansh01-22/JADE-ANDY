@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>JADE & ANDY</title>
+		<link rel="stylesheet" href="sass\style.css">
+		<link rel="stylesheet" href="jquery\animate\animate.css">
+
+		<script src="jquery\js\jquery.js"></script>
+		<!-- <script src=".D:\jquery\waypoints\lib\jquery.waypoints.min.js"></script> -->
+
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous" />
+
+		<!-- google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="left">
+				<!-- <img src="https://www.bing.com/images/blob?bcid=S3-GyfseaFMFbW7Tk0gB9XZMttoJ.....w8" alt=""> -->
+			</div>
+			<div class="center">
+				<nav class="nevber">
+					<ul>
+						<li><a href="">HOME</a></li>
+						<li><a href="">SERVICES</a></li>
+						<li><a href="">OUR WORK</a></li>
+						<li><a href="">ABOUT US</a></li>
+						<li><a href="">BOOK ONLINE</a></li>
+						<li><i class="fa fa-user" aria-hidden="true"></i><a href="">log-In</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="two">
+				<video src="image\toyota-supra-neon-rain-street-moewalls.com.mp4" autoplay muted></video>
+			</div>
+			<div class="three">
+				<img src="image\OIP-removebg-preview.png" alt="">
+				<h1>JADE & ANDY</h1>
+				<p>VINTAGE CAR SPECIALIST</p>
+			</div>
+			
+		</main>
+		<div class="about animate__animated" >
+		
+			<div id="ani" class="animate__animated">
+				<h2>ABOUT US</h2>
+			<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the
+				font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+				<br>
+				<br>
+				This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about
+				your team and what services you provide.
+			</p>
+			</div>
+		</div>
+		<div class="four">
+			<div class="box1">
+				<img src="https://c4.wallpaperflare.com/wallpaper/404/19/616/dark-car-vehicle-ford-wallpaper-preview.jpg" alt="">
+			</div>
+			<div class="box1">
+				<img src="https://c4.wallpaperflare.com/wallpaper/931/875/651/car-mercedes-benz-mercedes-amg-mercedes-amg-gt-wallpaper-preview.jpg" alt="">
+			</div>
+			<div class="box1">
+				<img src="https://c4.wallpaperflare.com/wallpaper/25/801/272/ford-mustang-car-street-wallpaper-preview.jpg" alt="">
+			</div>
+
+		</div>
+		<footer>
+			<div class="five">
+				<div class="fist">
+					<p>
+						500 Terry Francois Street
+						<br>
+						San Francisco, CA 94158
+						<br>
+						<br>
+						info@mysite.com
+                        <br>
+                       <br>
+						Tel: 123-456-7890
+					</p>
+					<br>
+					<br>
+					<p>
+						OPENING HOURS:
+					</p><br>
+					<p>
+						Mon - Fri: 7am - 10pm<br>
+						​​Saturday: 8am - 10pm<br>
+						​Sunday: 8am - 11pm<br>
+					</p>
+				</div>
+				<div class="sec">
+					<form action="" class="	form">
+						<label for="fname">First name:</label><br>
+						<input type="text" id="fname" name="fname" value=""><br>
+
+						<label for="lname">Last name:</label><br>
+						<input type="text" id="lname" name="lname" value=""><br>
+
+						<label for="email">Email:</label><br>
+						<input type="email" id="email" name="email" value=""><br>
+
+						<label for="fname">Subject:</label><br>
+						<input type="text" id="Subject" name="Subject" value=""><br>
+
+						<label for="add">Message: </label> <br>
+						<textarea rows="5" cols="25" id="add" >
+						</textarea><br>
+						<input type="Submit" value="Submit">
+					</form>
+				</div>
+			</div>
+			<div>
+				<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+			<div class="six">
+				<p>Copyright 2023 © </p>
+			</div>
+		</footer>
+
+		<script src="../jquery/waypoints/lib/jquery.waypoints.min.js"></script>
+		<script>
+			$(document).ready(() => {
+				$(".about").waypoint({
+					handler: function (direction) {
+						$("#ani").addClass("animate__swing ");
+					}, offset: '100'
+				});
+			});
+		</script>
+	</body>
+
+</html>
